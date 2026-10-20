@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Máximo | Portfólio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* ===== CABEÇALHO ===== */
+    header {
+      background-color: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== SECÇÕES GERAIS ===== */
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section > h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #1e3a8a;
+      border-bottom: 3px solid #1e3a8a;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    /* ===== SOBRE MIM ===== */
+    .sobre p {
+      font-size: 1.05rem;
+      margin-bottom: 12px;
+    }
+
+    /* ===== PROJETOS ===== */
+    .projetos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    /* Cada div dentro da secção .projetos é um projeto */
+    .projetos > div {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projetos > div img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .projetos > div p {
+      padding: 15px 20px 5px;
+      font-size: 1rem;
+    }
+
+    .projetos > div a {
+      display: inline-block;
+      margin: 10px 20px 20px;
+      padding: 10px 18px;
+      background-color: #1e3a8a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      text-align: center;
+      align-self: flex-start;
+    }
+
+    /* ===== CONTACTOS ===== */
+    .contactos ul {
+      list-style: none;
+    }
+
+    .contactos li {
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    .contactos a {
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+
+    /* ===== RODAPÉ ===== */
+    footer {
+      background-color: #1e3a8a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== RESPONSIVO ===== */
+    @media (min-width: 600px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+
+      .projetos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      header {
+        padding: 90px 20px;
+      }
+
+      .projetos {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>Victor Máximo</h1>
+    <p>Jovem programador | Estudante de HTML, CSS e JavaScript</p>
+  </header>
+
+  <!-- SOBRE MIM -->
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <p>Olá! Sou o Victor Máximo, sou jovem e estou a dar os primeiros passos no mundo da programação.</p>
+    <p>Já aprendi HTML e CSS para criar páginas web e neste momento estou a aprender JavaScript para tornar os sites interativos.</p>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projetos-section">
+    <h2>Os meus projetos</h2>
+    <div class="projetos">
+
+      <div>
+        <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Projeto+1" alt="Imagem do projeto 1">
+        <p>Página pessoal feita com HTML e CSS, com layout responsivo.</p>
+        <a href="https://github.com/victormaximo/projeto-1" target="_blank">Ver projeto</a>
+      </div>
+
+      <div>
+        <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Projeto+2" alt="Imagem do projeto 2">
+        <p>Landing page de um pequeno negócio fictício, com secções e botões.</p>
+        <a href="https://github.com/victormaximo/projeto-2" target="_blank">Ver projeto</a>
+      </div>
+
+      <div>
+        <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Projeto+3" alt="Imagem do projeto 3">
+        <p>Primeiro exercício em JavaScript: uma pequena calculadora.</p>
+        <a href="https://github.com/victormaximo/projeto-3" target="_blank">Ver projeto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTOS -->
+  <section class="contactos">
+    <h2>Contactos</h2>
+    <ul>
+      <li>Email: <a href="mailto:victor@exemplo.com">victor@exemplo.com</a></li>
+      <li>GitHub: <a href="https://github.com/victormaximo" target="_blank">github.com/victormaximo</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/victormaximo" target="_blank">linkedin.com/in/victormaximo</a></li>
+    </ul>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2026 Victor Máximo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
